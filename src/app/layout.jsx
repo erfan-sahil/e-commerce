@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/navbar/Navbar";
+import StoreContextProvider from "@/context/StoreContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,10 +24,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${outfit.variable} ${geistMono.variable} antialiased bg-white`}
+        className={`${outfit.variable} ${geistMono.variable} antialiased bg-white w-[90%] mx-auto`}
       >
-        <Navbar />
-        {children}
+        <StoreContextProvider>
+          <Navbar />
+          {children}
+        </StoreContextProvider>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <div className="flex justify-around items-center py-5">
+    <div className="flex justify-between items-center py-5">
       <Image src={logo} alt="logo" width={150} height={140} />
       <ul className="flex items-center gap-10">
         <Link
