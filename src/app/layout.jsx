@@ -27,13 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${outfit.variable} ${geistMono.variable} antialiased bg-white `}
       >
-        <StoreContextProvider>
-          <div className="w-[90%] mx-auto">
-            <Navbar />
-            {children}
-          </div>
-          <Footer />
-        </StoreContextProvider>
+        <StoreContextProvider>{children}</StoreContextProvider>
       </body>
     </html>
   );

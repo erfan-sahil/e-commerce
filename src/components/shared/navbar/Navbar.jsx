@@ -58,9 +58,12 @@ const Navbar = () => {
 
         <Image src={basketIcon} alt="basket icon" />
 
-        <button className="text-[#49557e] border border-orange-800 rounded-3xl hover:bg- py-2 px-5 hover:bg-[#fff4f2] transition-all duration-300 transform hover:scale-105">
+        <Link
+          href="/login"
+          className="text-[#49557e] border border-orange-800 rounded-3xl hover:bg- py-2 px-5 hover:bg-[#fff4f2] transition-all duration-300 transform hover:scale-105"
+        >
           Sign In
-        </button>
+        </Link>
       </div>
     </div>
   );
