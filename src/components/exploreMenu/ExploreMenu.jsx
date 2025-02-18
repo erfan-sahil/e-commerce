@@ -4,7 +4,7 @@ import Image from "next/image";
 const ExploreMenu = ({ setCategory, category }) => {
   console.log(category);
   return (
-    <div>
+    <div id="menu">
       <h1 className="text-[#262626] text-3xl font-semibold my-2">
         Explore Our Menu
       </h1>

@@ -23,7 +23,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/menu"
+          href="/#menu"
           className={`${
             pathname === "/menu"
               ? "text-orange-500 border-b-2 border-orange-500"
@@ -33,17 +33,17 @@ const Navbar = () => {
           Menu
         </Link>
         <Link
-          href="/mobile-app"
+          href="/#food-item"
           className={`${
-            pathname === "/mobile-app"
+            pathname === "/food-item"
               ? "text-orange-500 border-b-2 border-orange-500"
               : "text-[#49557e] hover:text-orange-500 transition-all duration-200"
           }`}
         >
-          Mobile-app
+          Food Item
         </Link>
         <Link
-          href="/contact-us"
+          href="/#contact-us"
           className={`${
             pathname === "/contact-us"
               ? "text-orange-500 border-b-2 border-orange-500"

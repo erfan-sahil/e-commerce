@@ -9,31 +9,31 @@ import food7 from "../frontend_assets/menu_image/menu_6.png";
 
 export const menuList = [
   {
-    title: "Food 1",
+    title: "Salad",
     image: food1,
   },
   {
-    title: "Food2",
+    title: "Rolls",
     image: food2,
   },
   {
-    title: "Food3",
+    title: "Desserts",
     image: food3,
   },
   {
-    title: "Food4",
+    title: "Sandwich",
     image: food4,
   },
   {
-    title: "Food5",
+    title: "Cake",
     image: food5,
   },
   {
-    title: "Food6",
+    title: "Pure Veg",
     image: food6,
   },
   {
-    title: "Food7",
+    title: "Pasta",
     image: food7,
   },
 ];

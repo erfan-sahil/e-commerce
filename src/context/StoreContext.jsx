@@ -7,22 +7,18 @@ export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
   const addToCart = (itemId) => {
-    setCartItems((prev) => ({
-      ...prev,
-      [itemId]: (prev[itemId] || 0) + 1,
-    }));
+    if (!cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
   };
 
   const removeFromCart = (itemId) => {
-    setCartItems((prev) => {
-      const updatedCart = { ...prev };
-      if (updatedCart[itemId] > 1) {
-        updatedCart[itemId] -= 1;
-      } else {
-        delete updatedCart[itemId];
-      }
-      return updatedCart;
-    });
+    setCartItems((prev) => ({
+      ...prev,
+      [itemId]: prev[itemId] - 1,
+    }));
   };
 
   const contextValue = {
