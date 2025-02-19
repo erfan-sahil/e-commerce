@@ -15,7 +15,6 @@ const foodSchema = new mongoose.Schema({
   },
   image: {
     type: String,
-    required: true,
   },
   category: {
     type: String,
@@ -23,6 +22,6 @@ const foodSchema = new mongoose.Schema({
   },
 });
 
-const foodModel = mongoose.model("food", foodSchema);
+const foodModel = mongoose.models.food || mongoose.model("food", foodSchema);
 
 export default foodModel;
