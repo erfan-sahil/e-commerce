@@ -56,7 +56,9 @@ const Navbar = () => {
       <div className="flex items-center gap-8">
         <Image src={searchIcon} alt="search icon" />
 
-        <Image src={basketIcon} alt="basket icon" />
+        <Link href="/cart">
+          <Image src={basketIcon} alt="basket icon" />
+        </Link>
 
         <Link
           href="/login"

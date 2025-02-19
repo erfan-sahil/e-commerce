@@ -2,7 +2,6 @@ import React from "react";
 import { menuList } from "../../assets/explore_menu/MenuDatabase";
 import Image from "next/image";
 const ExploreMenu = ({ setCategory, category }) => {
-  console.log(category);
   return (
     <div id="menu">
       <h1 className="text-[#262626] text-3xl font-semibold my-2">
