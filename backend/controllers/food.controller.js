@@ -6,12 +6,12 @@ const addFood = async (req, res) => {
   if (!req.file) {
     return res.status(400).json({ message: "No file uploaded" });
   }
-  let image_fileName = `${req.file.filename}`;
+  let imageFileName = `${req.file.filename}`;
   const food = new foodModel({
     name: req.body.name,
     price: req.body.price,
     description: req.body.description,
-    image: image_fileName,
+    image: imageFileName,
     category: req.body.category,
   });
   try {
